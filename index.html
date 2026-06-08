@@ -1,129 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lloyd Spencer Niepez</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lloyd Spencer Niepez | Portfolio</title>
 
-  
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  
-  <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
-  <header>
-
+<header>
+  <nav class="navbar">
     <div class="logo">LSN</div>
 
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-  </header>
+    <div id="menuBtn"><i class="fa-solid fa-bars"></i></div>
+  </nav>
 
-  <section class="hero">
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
 
-    <img src="c:\Users\Asus\Downloads\OKI.png" alt="Lloyd">
-
+<section class="hero reveal" id="home">
+  <div>
     <h1>Hi, I'm <span>Lloyd Spencer Niepez</span></h1>
+    <p>BSIT Student • Web Developer • UI/UX Enthusiast</p>
 
-    <p>
-      BSIT Student • Web Developer • UI/UX Enthusiast
-    </p>
+    <div class="buttons">
+      <a href="#projects" class="btn primary">Projects</a>
+      <a href="#contact" class="btn">Contact</a>
+    </div>
+  </div>
 
-    <a href="#projects" class="btn">View Projects</a>
+  <img src="OKI.png" alt="Lloyd Spencer Niepez">
+</section>
 
-  </section>
+<section id="about" class="reveal">
+  <h2>About Me</h2>
 
-
-  <section id="about">
-
-    <h2>About Me</h2>
-
-    <p class="about-text">
-      I'm a first-year BSIT student passionate about
-      frontend development, responsive websites,
-      and modern UI/UX design.
-    </p>
-
-  </section>
-
-  
-  <section id="skills">
-
-    <h2>Skills</h2>
-
-    <div class="skills">
-
-      <div class="card">
-        <i class="fa-brands fa-html5"></i>
-        <h3>HTML</h3>
-        <p>Building website structures.</p>
-      </div>
-
-      <div class="card">
-        <i class="fa-brands fa-css3-alt"></i>
-        <h3>CSS</h3>
-        <p>Designing responsive layouts.</p>
-      </div>
-
-      <div class="card">
-        <i class="fa-brands fa-js"></i>
-        <h3>JavaScript</h3>
-        <p>Making websites interactive.</p>
-      </div>
-
+  <div class="grid">
+    <div class="card">
+      <i class="fa-solid fa-user"></i>
+      <p>First-year BSIT student passionate about frontend development and responsive websites.</p>
     </div>
 
-  </section>
+    <div class="card">
+      <i class="fa-solid fa-code"></i>
+      <p>Enjoy learning technologies and creating modern digital experiences.</p>
+    </div>
+  </div>
+</section>
 
+<section id="skills" class="reveal">
+  <h2>Skills</h2>
 
-  <section id="projects">
-
-    <h2>Projects</h2>
-
-    <div class="projects">
-
-      <div class="card">
-        <i class="fa-solid fa-globe"></i>
-        <h3>Portfolio Website</h3>
-        <p>
-          
-        </p>
-      </div>
-
-      <div class="card">
-        <i class="fa-solid fa-calculator"></i>
-        <h3>Calculator App</h3>
-        <p>
-          
-        </p>
-      </div>
-
+  <div class="grid">
+    <div class="card">
+      <h3>HTML</h3>
+      <div class="bar"><span data-width="90%"></span></div>
     </div>
 
-  </section>
+    <div class="card">
+      <h3>CSS</h3>
+      <div class="bar"><span data-width="85%"></span></div>
+    </div>
 
-  <!-- CONTACT -->
-  <section id="contact">
+    <div class="card">
+      <h3>JavaScript</h3>
+      <div class="bar"><span data-width="75%"></span></div>
+    </div>
 
-    <h2>Contact</h2>
+    <div class="card">
+      <h3>Java</h3>
+      <div class="bar"><span data-width="70%"></span></div>
+    </div>
+  </div>
+</section>
 
-    <p>Email: lniepez66@adssu.edu.ph</p>
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
 
-  </section>
+  <div class="grid">
+    <div class="card"><h3>Portfolio Website</h3></div>
+    <div class="card"><h3>Calculator App</h3></div>
+    <div class="card"><h3>To-Do App</h3></div>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    © 2026 Lloyd Spencer Niepez
-  </footer>
+<section id="contact" class="reveal">
+  <h2>Contact Me</h2>
 
+  <div class="contact">
+    <input id="name" placeholder="Name">
+    <input id="email" placeholder="Email">
+    <textarea id="message" placeholder="Message"></textarea>
+    <button onclick="sendMessage()">Send Message</button>
+  </div>
+</section>
+
+<footer>© 2025 Lloyd Spencer Niepez</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
